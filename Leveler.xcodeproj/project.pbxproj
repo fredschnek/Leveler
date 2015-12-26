@@ -13,6 +13,7 @@
 		7F4BB2441BD5D15C007A4B16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4BB2431BD5D15C007A4B16 /* Images.xcassets */; };
 		7F4BB2471BD5D15C007A4B16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4BB2451BD5D15C007A4B16 /* LaunchScreen.xib */; };
 		7F4BB2531BD5D15C007A4B16 /* LevelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BB2521BD5D15C007A4B16 /* LevelerTests.swift */; };
+		7F4BB25D1BD5D28D007A4B16 /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BB25C1BD5D28D007A4B16 /* DialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7F4BB24C1BD5D15C007A4B16 /* LevelerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LevelerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4BB2511BD5D15C007A4B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4BB2521BD5D15C007A4B16 /* LevelerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelerTests.swift; sourceTree = "<group>"; };
+		7F4BB25C1BD5D28D007A4B16 /* DialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,12 @@
 		7F4BB2391BD5D15B007A4B16 /* Leveler */ = {
 			isa = PBXGroup;
 			children = (
-				7F4BB23C1BD5D15B007A4B16 /* AppDelegate.swift */,
-				7F4BB23E1BD5D15B007A4B16 /* ViewController.swift */,
 				7F4BB2401BD5D15C007A4B16 /* Main.storyboard */,
-				7F4BB2431BD5D15C007A4B16 /* Images.xcassets */,
 				7F4BB2451BD5D15C007A4B16 /* LaunchScreen.xib */,
+				7F9FC6E11C2EB3A100666833 /* View */,
+				7F9FC6E21C2EB3AA00666833 /* Controller */,
 				7F4BB23A1BD5D15B007A4B16 /* Supporting Files */,
+				7F9FC6E31C2EB3B900666833 /* Resources */,
 			);
 			path = Leveler;
 			sourceTree = "<group>";
@@ -90,6 +92,7 @@
 		7F4BB23A1BD5D15B007A4B16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F4BB23C1BD5D15B007A4B16 /* AppDelegate.swift */,
 				7F4BB23B1BD5D15B007A4B16 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +113,30 @@
 				7F4BB2511BD5D15C007A4B16 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F9FC6E11C2EB3A100666833 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F4BB25C1BD5D28D007A4B16 /* DialView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7F9FC6E21C2EB3AA00666833 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F4BB23E1BD5D15B007A4B16 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7F9FC6E31C2EB3B900666833 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F4BB2431BD5D15C007A4B16 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +183,7 @@
 		7F4BB22F1BD5D15B007A4B16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Frederico Schnekenberg";
 				TargetAttributes = {
@@ -213,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4BB23F1BD5D15B007A4B16 /* ViewController.swift in Sources */,
+				7F4BB25D1BD5D28D007A4B16 /* DialView.swift in Sources */,
 				7F4BB23D1BD5D15B007A4B16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +440,7 @@
 				7F4BB2581BD5D15C007A4B16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F4BB2591BD5D15C007A4B16 /* Build configuration list for PBXNativeTarget "LevelerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +449,7 @@
 				7F4BB25B1BD5D15C007A4B16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
